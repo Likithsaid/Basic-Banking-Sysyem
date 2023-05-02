@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <center>
+        <header>
+        <h1>Grip Money Transfer App</h1>
+        <nav>
+            <ul>
+                <li><a href="grip.html">Home</a></li>
+                <li><a href="Customers.html">View all Customers</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="container">
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Account Number</th>
+                        <th scope="col">Customer Name</th>
+                        <th scope="col">Phone Number</th>
+                        <th scope="col">Balance</th>
+                        <th scope="col">More Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">sbi234514</td>
+                        <td>Likith</td>
+                        <td>1234567890</td>
+                        <td>
+                            <p>90000.00</p>
+                        </td>
+                        <td>
+        <button onclick="showDetails()">View More</button>
+      </td>
+                    </tr>
+                   
+                    <tr>
+                        <td scope="row">sbi234525</td>
+                        <td>Ram</td>
+                        <td>2345678910</td>
+                        <td>
+                            <l>10000.00</l>
+                        </td>
+                        <td>
+        <button onclick="showDetails()">View More</button>
+      </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">sbi341453</td>
+                        <td>Raj</td>
+                        <td>3456789120</td>
+                        <td>
+                            <p>80000.00</p>
+                        </td>
+                        <td>
+        <button onclick="showDetails()">View More</button>
+      </td>
+                    </tr>
+                    
+                    <tr>
+                        <td scope="row">sbi323451</td>
+                        <td>Rakesh</td>
+                        <td>4567890123</td>
+                        <td>
+                            <p>20000.00</p>
+                        </td>
+                        <td>
+        <button onclick="showDetails()">View More</button>
+      </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">sbi341255</td>
+                        <td>Hari</td>
+                        <td>5678901234</td>
+                        <td>
+                            <p>70000.00</p>
+                        </td>
+                        <td>
+        <button onclick="showDetails()">View More</button>
+      </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">sbi233456</td>
+                        <td>Lohith</td>
+                        <td>6789012345</td>
+                        <td>
+                            <p>30000.00</p>
+                        </td>
+                        <td>
+        <button onclick="showDetails()">View More</button>
+      </td>
+                    </tr>
+                    <tr>
+                        <td>sbi323457</td>
+                        <td>Nikhil</td>
+                        <td>7890123456</td>
+                        <td>
+                            <p>60000.00</p>
+                        </td>
+                        <td>
+        <button onclick="showDetails()">View More</button>
+      </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">sbi413458</td>
+                        <td>Mohith</td>
+                        <td>8901234567</td>
+                        <td>
+                            <p>40000.00</p>
+                        </td>
+                        <td>
+        <button onclick="showDetails()">View More</button>
+      </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">sbi234112</td>
+                        <td>Pawan</td>
+                        <td>9012345678</td>
+                        <td>
+                            <p>50000.00</p>
+                        </td>
+                        <td>
+        <button onclick="showDetails()">View More</button>
+      </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">sbi344510</td>
+                        <td>Treya</td>
+                        <td>0123456789</td>
+                        <td>
+                            <p>50050.00</p>
+                        </td>
+                        <td>
+
+        <button onclick="showDetails()">View More</button>
+      </td>
+                    </tr>
+
+</div>
+                </tbody>
+            </table>
+            <h2>Details Will Be Displayed Here</h2>
+            <div id="customer-details">
+                            <td></td>
+                        <td></td>
+        </div>
+    </div>
+    <div class="link-container">
+        <a href="Transaction.html">Send Money</a>
+    </div>    
+    </center>
+    <script type="text/javascript">
+        function showDetails() {
+  var selectedRow = event.target.parentNode.parentNode;
+  var name = selectedRow.cells[1].innerHTML;
+  var email = selectedRow.cells[2].innerHTML;
+  var balance = selectedRow.cells[3].innerHTML;
+  var message = "Name: " + name + "<br>Email: " + email +  "<br>Current Balance: " + balance ;
+  var detailsDiv = document.getElementById("customer-details");
+  detailsDiv.innerHTML = message;
+}
+    </script>
+</head>
+</html>
